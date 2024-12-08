@@ -31,7 +31,7 @@
             "PHPUnitTests\\": "tests/PHPUnit/"
         }
     },
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
         "process-timeout": 1200
