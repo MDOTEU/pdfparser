@@ -11,9 +11,9 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/MDOTEU/pdfparser/issues"
+        "issues": "https://github.com/smalot/pdfparser/issues"
     },
-    "homepage": "https://github.com/MDOTEU/pdfparser",
+    "homepage": "https://www.pdfparser.org",
     "require": {
         "php": ">=7.1",
         "symfony/polyfill-mbstring": "^1.18",
@@ -21,7 +21,7 @@
         "ext-iconv": "*"
     },
     "autoload": {
-        "psr-4": {
+        "psr-0": {
             "Smalot\\PdfParser\\": "src/"
         }
     },
@@ -31,8 +31,6 @@
             "PHPUnitTests\\": "tests/PHPUnit/"
         }
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "config": {
         "process-timeout": 1200
     }
