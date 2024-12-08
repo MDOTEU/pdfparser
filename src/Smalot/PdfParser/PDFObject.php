@@ -894,7 +894,7 @@ class PDFObject
 
                         if (true === $this->addPositionWhitespace && false !== $current_position['x']) {
                             $curY = $currentY - $current_position['y'];
-                            if (abs($curY) >= abs($factorY) / 4) {
+                            if (abs($curY) >= abs($factorY) * 1.6) {
                                 $whiteSpace = "\n";
                             } else {
                                 if (true === $reverse_text) {
@@ -909,8 +909,10 @@ class PDFObject
                                 // future, we might offer this value to users as a config
                                 // option.
                                 if ($curX >= abs($factorX * 7)) {
-                                    $whiteSpace = "\t";
+                                    $whiteSpace = ",";
                                 } elseif ($curX >= abs($factorX * 2)) {
+                                    $whiteSpace = ',';
+                                } else {
                                     $whiteSpace = ' ';
                                 }
                             }
