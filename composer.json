@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "MDOTEU\\PdfParser\\": "src/"
+            "Smalot\\PdfParser\\": "src/"
         }
     },
     "autoload-dev": {
