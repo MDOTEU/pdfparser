@@ -912,6 +912,8 @@ class PDFObject
                                     $whiteSpace = ",";
                                 } elseif ($curX >= abs($factorX * 2)) {
                                     $whiteSpace = ',';
+                                } elseif ($curX >= abs($factorX) - 3.56) {
+                                    $whiteSpace = ',';
                                 } else {
                                     $whiteSpace = ' ';
                                 }
